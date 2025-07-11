@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef2f7;
+    color: #1e2a38;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1e2a38;
+    padding: 1rem 2rem;
+}
+
+#nav_bar {
+    padding: 6px 12px;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 6px 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin: 2px;
+    transition: transform 0.2s ease;
+}
+
+.nav-card:hover {
+    transform: translateY(-1px);
+}
+
+.nav-card.left a {
+    font-size: 1.2rem;
+}
+
+.right-links {
+    display: flex;
+    gap: 8px;
+}
+
+.nav-card a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+#projects h1 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 2rem;
+    color: #222;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 100vw;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card .ss img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card .head {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+}
+
+.card .discription {
+    padding: 10px 15px;
+    font-size: 0.95rem;
+}
+
+.card details {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+footer {
+    background-color: #1e2a38;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+#end {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
